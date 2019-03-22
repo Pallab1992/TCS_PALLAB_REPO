@@ -10,7 +10,7 @@ Fact()
 		((fact =  i * fact ))
 		(( i = i + 1 )) 
         done
-        echo "Factorial of $number is: "$fact
+	echo -e "Factorial of $number is: \033[1;32m$fact\033[0m" 
         return 0;
 }
 
